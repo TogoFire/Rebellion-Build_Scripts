@@ -52,7 +52,7 @@ echo -e ""
 echo -e ""
 echo -e "${CLR_BLD_YLW}Clone device trees...${CLR_RST}"
 git clone https://github.com/Rebellion-Hub-Devices/device_Asus_X00T.git -b ten device/asus/X00T
-git clone https://github.com/pranavkapoor001/kernel_asus_sdm660_old.git -b Stardust kernel/asus/sdm660
+git clone https://github.com/pranavkapoor001/kernel_asus_sdm660.git -b Stardust kernel/asus/sdm660
 git clone https://github.com/pranavkapoor001/proprietary_vendor_asus.git -b lineage-17.1 vendor/asus
 echo -e "${CLR_BLD_YLW}Device trees are succussfully cloned...${CLR_RST}"
 echo -e ""
@@ -65,6 +65,7 @@ return null;
 
 function make_rom() {
 . b*/e*
+export TEMPORARY_DISABLE_PATH_RESTRICTIONS=true
 lunch rebellion_X00T-userdebug
 export REBELLION_OFFICIAL=true
 source ~/.bashrc
