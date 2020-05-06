@@ -76,31 +76,23 @@ brunch X00T
 }
 
   echo -e " Select if you want to Build or Not : "
-  echo -e " 1.Yes Let's make Rebellion"
-  echo -e " 2.No "
+  echo -e " 1.Yes Let's Cook it"
+  echo -e " 2.No, get Lost"
   echo -n " Your choice : ? "
   read build
 
 case $ch in
-  1) echo -e "${CLR_BLD_GRN}***********************************************${CLR_RST}"
-     echo -e "          	Building Rebellion Hurray                            "
-     echo -e "${CLR_BLD_GRN}***********************************************${CLR_RST}"
+  1) echo -e "${CLR_BLD_GRN}Let's Cook it{CLR_RST}"
      make_rom ;;
-  2) echo -e "${CLR_BLD_GRN}***********************************************${CLR_RST}"
-     echo -e "          	Ohh NO...                                            "
-     echo -e "${CLR_BLD_GRN}***********************************************${CLR_RST}"
+  2) echo -e "${CLR_BLD_GRN}Fuck! No${CLR_RST}"
      do_quit ;;
 esac
 
 if [ "$build" = "1" ]; then
-     echo -e "${CLR_BLD_GRN}***********************************************${CLR_RST}"
-     echo -e "                   Building Rebellion                                  "
-     echo -e "${CLR_BLD_GRN}***********************************************${CLR_RST}"
+     echo -e "${CLR_BLD_GRN}Oh Yeahh! Cooking it!${CLR_RST}"
      make_rom
 else
-     echo -e "${CLR_BLD_GRN}***********************************************${CLR_RST}"
-     echo -e "                   Build has been Quited                               "
-     echo -e "${CLR_BLD_GRN}***********************************************${CLR_RST}"
+     echo -e "${CLR_BLD_GRN}I Can't Cook it -_-${CLR_RST}"
 fi
 
 echo -e ""
