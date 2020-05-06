@@ -53,7 +53,8 @@ echo -e ""
 echo -e "${CLR_BLD_YLW}Clone device trees...${CLR_RST}"
 git clone https://github.com/Rebellion-Hub-Devices/device_Asus_X00T.git -b ten device/asus/X00T
 git clone https://github.com/pranavkapoor001/kernel_asus_sdm660.git -b Stardust kernel/asus/sdm660
-git clone https://github.com/pranavkapoor001/proprietary_vendor_asus.git -b lineage-17.1 vendor/asus
+git clone https://github.com/Rebellion-Hub-Devices/proprietary_vendor_Asus -b ten vendor/asus
+git clone https://github.com/Rebellion-Hub-Devices/packages_apps_ZenParts.git -b ten packages/apps/ZenParts
 echo -e "${CLR_BLD_YLW}Device trees are succussfully cloned...${CLR_RST}"
 echo -e ""
 
