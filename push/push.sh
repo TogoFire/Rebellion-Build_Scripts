@@ -20,12 +20,15 @@ option=0
 # For test Builds
 function push_gdrive() {
 cd ~
+cd r*
 cd o*/t*/p*/X*
 gdrive upload R*.zip
 }
 
 # For Rebelized Builds
 function push_sf() {
+cd ~
+cd r*/o*/t*/p*/X*
 sftp abhat993@frs.sourceforge.net
 cd /home/frs/project/rebellion-os/X00T
 put R*.zip
