@@ -64,3 +64,5 @@ else
      echo -e "${CLR_BLD_GRN}Cooking a Clean Build...!${CLR_RST}"
      make_clean
 fi
+
+wget https://raw.githubusercontent.com/Aston-Martinn/Rebellion-Build_Scripts/ten/push/push.sh && bash push.sh
